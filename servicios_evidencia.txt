@@ -1,0 +1,7 @@
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0         127.0.0.11:46215      0.0.0.0:*   
+tcp   LISTEN 0      4096      127.0.0.11:40821      0.0.0.0:*   
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0         127.0.0.11:45353      0.0.0.0:*   
+tcp   LISTEN 0      4096      127.0.0.11:37479      0.0.0.0:*   
+NOTA: El servidor PC3 (Nginx) no permite el comando 'ss' por ser una imagen minimalista. Sin embargo, el servicio HTTP está activo y funcionando correctamente en el puerto 80/TCP, lo cual se demuestra con el archivo 'http_evidencia.txt'.

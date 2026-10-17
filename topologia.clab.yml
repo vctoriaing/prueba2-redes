@@ -1,0 +1,61 @@
+name: prueba2-practica
+
+topology:
+  nodes:
+    # Switches de Capa 2 (Ahora usan netshoot, que ya trae el comando bridge)
+    sw1:
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+    sw2:
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+
+    # Routers Linux
+    r1:
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+    r2:
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+
+    # Clientes Sede 1
+    pc0:
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+    pc1:
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+    pc2:
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+
+    # Servidores Sede 2
+    pc3: # HTTP Nginx
+      kind: linux
+      image: nginx:alpine
+    pc4: # Syslog UDP 514
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+    pc5: # TCP 5000
+      kind: linux
+      image: nicolaka/netshoot
+      cmd: sleep infinity
+
+  links:
+    - endpoints: ["pc0:eth1", "sw1:eth1"]
+    - endpoints: ["pc1:eth1", "sw1:eth2"]
+    - endpoints: ["pc2:eth1", "sw1:eth3"]
+    - endpoints: ["sw1:eth4", "r1:eth1"]
+    - endpoints: ["r1:eth2", "r2:eth2"]
+    - endpoints: ["sw2:eth4", "r2:eth1"]
+    - endpoints: ["pc3:eth1", "sw2:eth1"]
+    - endpoints: ["pc4:eth1", "sw2:eth2"]
+    - endpoints: ["pc5:eth1", "sw2:eth3"]

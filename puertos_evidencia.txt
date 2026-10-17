@@ -1,0 +1,2 @@
+Connection to 192.168.100.146 5000 port [tcp/*] succeeded!
+nc: connect to 192.168.100.146 port 5001 (tcp) failed: Connection refused

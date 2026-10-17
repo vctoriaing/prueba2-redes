@@ -1,0 +1,2 @@
+@vctoriaing ➜ /workspaces/prueba2-redes (main) $ docker exec -it clab-prueba2-practica-pc4 nc -u -l -p 514
+Mensaje de prueba syslog

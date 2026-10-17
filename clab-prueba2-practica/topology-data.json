@@ -1,0 +1,480 @@
+{
+  "name": "prueba2-practica",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-65ea681b6a2a",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true,
+        "ipam": {
+          "provider": "containerlab"
+        }
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "pc0": {
+      "index": "0",
+      "shortname": "pc0",
+      "longname": "clab-prueba2-practica-pc0",
+      "fqdn": "pc0.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc0",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc0",
+        "clab-node-longname": "clab-prueba2-practica-pc0",
+        "clab-node-name": "pc0",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc1": {
+      "index": "1",
+      "shortname": "pc1",
+      "longname": "clab-prueba2-practica-pc1",
+      "fqdn": "pc1.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc1",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc1",
+        "clab-node-longname": "clab-prueba2-practica-pc1",
+        "clab-node-name": "pc1",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc2": {
+      "index": "2",
+      "shortname": "pc2",
+      "longname": "clab-prueba2-practica-pc2",
+      "fqdn": "pc2.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc2",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc2",
+        "clab-node-longname": "clab-prueba2-practica-pc2",
+        "clab-node-name": "pc2",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc3": {
+      "index": "3",
+      "shortname": "pc3",
+      "longname": "clab-prueba2-practica-pc3",
+      "fqdn": "pc3.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc3",
+      "kind": "linux",
+      "image": "nginx:alpine",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc3",
+        "clab-node-longname": "clab-prueba2-practica-pc3",
+        "clab-node-name": "pc3",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc4": {
+      "index": "4",
+      "shortname": "pc4",
+      "longname": "clab-prueba2-practica-pc4",
+      "fqdn": "pc4.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc4",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc4",
+        "clab-node-longname": "clab-prueba2-practica-pc4",
+        "clab-node-name": "pc4",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc5": {
+      "index": "5",
+      "shortname": "pc5",
+      "longname": "clab-prueba2-practica-pc5",
+      "fqdn": "pc5.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc5",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/pc5",
+        "clab-node-longname": "clab-prueba2-practica-pc5",
+        "clab-node-name": "pc5",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r1": {
+      "index": "6",
+      "shortname": "r1",
+      "longname": "clab-prueba2-practica-r1",
+      "fqdn": "r1.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/r1",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/r1",
+        "clab-node-longname": "clab-prueba2-practica-r1",
+        "clab-node-name": "r1",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r2": {
+      "index": "7",
+      "shortname": "r2",
+      "longname": "clab-prueba2-practica-r2",
+      "fqdn": "r2.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/r2",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/r2",
+        "clab-node-longname": "clab-prueba2-practica-r2",
+        "clab-node-name": "r2",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sw1": {
+      "index": "8",
+      "shortname": "sw1",
+      "longname": "clab-prueba2-practica-sw1",
+      "fqdn": "sw1.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/sw1",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::b",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/sw1",
+        "clab-node-longname": "clab-prueba2-practica-sw1",
+        "clab-node-name": "sw1",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sw2": {
+      "index": "9",
+      "shortname": "sw2",
+      "longname": "clab-prueba2-practica-sw2",
+      "fqdn": "sw2.prueba2-practica.io",
+      "group": "",
+      "labdir": "/home/codespace/prueba2_practica/clab-prueba2-practica/sw2",
+      "kind": "linux",
+      "image": "nicolaka/netshoot",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-65ea681b6a2a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/codespace/prueba2_practica/clab-prueba2-practica/sw2",
+        "clab-node-longname": "clab-prueba2-practica-sw2",
+        "clab-node-name": "sw2",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/home/codespace/prueba2_practica/topologia.clab.yml",
+        "containerlab": "prueba2-practica"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "pc0",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:3c:27:98",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sw1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:16:2c:e0",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "pc1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:4a:1f:7d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sw1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:6f:bb:17",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "pc2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ce:bf:23",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sw1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:69:e5:e9",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "sw1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:10:0b:26",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:0c:16:82",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:b8:64:ac",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:7c:02:74",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "sw2",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:b7:57:72",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:b1:a7:a3",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "pc3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:7a:07:ab",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sw2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:5b:e0:8e",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "pc4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a4:30:7f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sw2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:66:09:0d",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "pc5",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:2d:e9:f5",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sw2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:3b:cb:e1",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

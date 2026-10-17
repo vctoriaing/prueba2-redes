@@ -1,0 +1,48 @@
+* Uses proxy env variable no_proxy == 'localhost,127.0.0.1,::1,*.local,172.20.20.0/24,3fff:172:20:20::/64,pc0,pc1,pc2,pc3,pc4,pc5,r1,r2,sw1,sw2'
+*   Trying 192.168.100.66:80...
+* Established connection to 192.168.100.66 (192.168.100.66 port 80) from 192.168.100.2 port 32870 
+* using HTTP/1.x
+> GET / HTTP/1.1
+> Host: 192.168.100.66
+> User-Agent: curl/8.21.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< Server: nginx/1.31.7
+< Date: Sat, 17 Oct 2026 00:40:31 GMT
+< Content-Type: text/html
+< Content-Length: 896
+< Last-Modified: Thu, 01 Oct 2026 23:04:24 GMT
+< Connection: keep-alive
+< ETag: "6abee6f8-380"
+< Accept-Ranges: bytes
+< 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, nginx is successfully installed and working.
+Further configuration is required for the web server, reverse proxy, 
+API gateway, load balancer, content cache, or other features.</p>
+
+<p>For online documentation and support please refer to
+<a href="https://nginx.org/">nginx.org</a>.<br/>
+To engage with the community please visit
+<a href="https://community.nginx.org/">community.nginx.org</a>.<br/>
+For enterprise grade support, professional services, additional 
+security features and capabilities please refer to
+<a href="https://f5.com/nginx">f5.com/nginx</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+* Connection #0 to host 192.168.100.66:80 left intact
